@@ -1,0 +1,66 @@
+@import "../../assets/scss/base";
+
+.card__wrapper {
+    .post__actions {
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .item {
+                margin-right: 15px;
+                cursor: pointer;
+                &:hover {
+                    color: $secondary_color;
+                }
+                .share__icon {
+                    transform: rotate(-30deg);
+                }
+            }
+        }
+
+        .right {
+            .item {
+                cursor: pointer;
+                &:hover {
+                    color: $secondary_color;
+                }
+            }
+        }
+    }
+
+    .likes{
+        span{
+            font-size: 15px;
+            font-weight: 600;
+        }
+    }
+
+    .caption{
+        .user__name{
+            font-size: 15px;
+            font-weight: 600;
+            margin-right: 5px;
+        }
+    }
+
+    .comment__box{
+        display: flex;
+        align-items: center;
+        border-top: 1px solid $primary_color;
+        padding: 10px 0px;
+        .input{
+            border: none;
+            outline: none;
+            padding-left: 4px;
+        }
+
+        .comment__btn{
+            color: lightseagreen;
+            cursor: pointer;
+        }
+    }
+}

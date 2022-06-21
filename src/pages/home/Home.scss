@@ -1,0 +1,22 @@
+@import '../../assets/scss/base';
+
+.container {
+    display: flex;
+    // flex-direction: column;
+    max-width: 950px !important;
+    // width: 100%;
+    margin-bottom: 20px;
+    .posts{
+        flex: 1;
+        // background-color: yellow;
+        height: 500px;;
+    }
+    .suggetions{
+        flex: 1;
+        position: relative;
+        width: 450px;
+        @media(max-width: $medium_device){
+            display: none;
+        }
+    }
+}
